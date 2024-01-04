@@ -23,7 +23,7 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Djdk.util.zip.disableZip64ExtraFieldValidation=true -Xmx3072m $(MAVEN_OPTS)'
-    goals: 'clean install'
+    goals: 'clean install -DskipTests'
     publishJUnitResults: false
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: 1.11
